@@ -63,16 +63,3 @@ Every change is written to `audit_log` (shown in the admin activity report and t
 | Place product on shelf, occupied slot rejected | – | – | |
 | Reports: forbidden types return 403 | | | |
 | CSV download opens in Excel | | | |
-
-## Suggested commits
-1. `chore: init Vite client and Express server`
-2. `feat: add database schema and seed users`
-3. `feat: secure login with hashed passwords`
-4. `feat: role-based access control`
-5. `feat: admin user management with last-admin protection`
-6. `feat: product CRUD with validation and search`
-7. `feat: orders with stock check and status flow`
-8. `feat: shelf placement, condition updates and change history`
-9. `feat: admin locations management`
-10. `feat: role-specific reports with CSV export`
-11. `docs: add feature table and test checklist`
