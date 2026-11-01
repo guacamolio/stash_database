@@ -1,4 +1,5 @@
-  import { Routes, Route } from 'react-router-dom';
+//pārbauda visu ko izsauc caur api 
+import { Routes, Route } from 'react-router-dom';
 import ProtectedRoute from './components/ProtectedRoute.jsx';
 import Layout from './components/Layout.jsx';
 import Login from './pages/Login.jsx';
@@ -15,7 +16,6 @@ import Locations from './pages/Locations.jsx';
 import Reports from './pages/Reports.jsx';
 import Forbidden from './pages/Forbidden.jsx';
 
-// [path, permission needed, page]. The server checks the same permissions on its API.
 const ROUTES = [
   ['/users', 'user:read', <Users />],
   ['/users/new', 'user:create', <UserForm />],

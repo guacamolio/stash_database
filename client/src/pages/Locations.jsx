@@ -1,3 +1,4 @@
+//adminu plauktu managerment
 import { useEffect, useState, useCallback } from 'react';
 import { api } from '../api.js';
 import FormError from '../components/FormError.jsx';

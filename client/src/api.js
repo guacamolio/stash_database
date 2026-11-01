@@ -1,4 +1,4 @@
-// Small fetch wrapper: JSON in/out, cookies included, errors thrown with the server's message.
+//errorus izmet ar reālu servera kļūmi
 export async function api(path, { method = 'GET', body } = {}) {
   const res = await fetch(`/api${path}`, {
     method,

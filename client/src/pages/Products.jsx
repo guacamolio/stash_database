@@ -1,3 +1,4 @@
+// lappa kur var pievienot produktus un meklēt, tika pievienots 200ms timers lai nesauc serveri katru ms lai pārbaudītu attiecīgo produktu 
 import { useEffect, useState, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { api } from '../api.js';

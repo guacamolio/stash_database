@@ -1,10 +1,10 @@
+//noliek produktus plauktā burtiski un highlighto duplikātus
 import { useEffect, useState, useCallback } from 'react';
 import { api } from '../api.js';
 import { PRODUCT_STATUS_LV } from '../labels.js';
 import FormError from '../components/FormError.jsx';
 
 const EMPTY = { product_id: '', shelf: '', row: '', slot: '' };
-
 export default function Placement() {
   const [items, setItems] = useState([]);
   const [form, setForm] = useState(EMPTY);

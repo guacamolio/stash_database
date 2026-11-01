@@ -1,3 +1,4 @@
+//sākuma lappa pēc login kas parāda textu ko vari apmēram izdarīt atkarīgi kāds tev ir role 
 import { useAuth } from '../context/AuthContext.jsx';
 import { ROLE_LV } from '../labels.js';
 

@@ -1,3 +1,4 @@
+//ļauj skatīties printēt vai saglabāt kā csv file reportus 
 import { useEffect, useState } from 'react';
 import { api } from '../api.js';
 import { useAuth } from '../context/AuthContext.jsx';
@@ -21,7 +22,7 @@ export default function Reports() {
       <div className="page-head">
         <h2>Atskaites</h2>
         <div className="actions">
-          {/* plain link: the browser sends the cookie and downloads the CSV */}
+          {/* plain link: the browser sends the cookie and downloads the CSV, domāts lai neatsūta vecu report ja piem. maini tabus pārāk aātri un mēģini tad saglabāt failu*/}
           <a className="btn" href={`/api/reports/${type}?format=csv`}>Lejupielādēt CSV</a>
           <button className="btn ghost" onClick={() => window.print()}>Drukāt</button>
         </div>

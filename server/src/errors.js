@@ -11,7 +11,6 @@ export function parseId(value) {
   return n;
 }
 
-// Turns a UNIQUE constraint failure into a friendly 409.
 export function onUnique(fn, message) {
   try {
     return fn();

@@ -1,3 +1,4 @@
+//pievienot vai mainīt produktu, kvantitāte tiek pārveidota no html uz ciparu ar number() lai nesūta serverim string kad vinš gaida ciparu
 import { useEffect, useState } from 'react';
 import { useNavigate, useParams, Link } from 'react-router-dom';
 import { api } from '../api.js';

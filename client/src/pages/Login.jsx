@@ -1,3 +1,4 @@
+//Login forma sākumā navigate pārbauda vai esi logged ar hook jo react vajag lai hook strādā vienādā secībā vienmēr 
 import { useState } from 'react';
 import { Navigate, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext.jsx';

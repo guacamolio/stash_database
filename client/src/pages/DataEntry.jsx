@@ -1,3 +1,4 @@
+//updateo produkta stāvokli un samaina viņa statusu visur 
 import { useEffect, useState, useCallback } from 'react';
 import { api } from '../api.js';
 import { PRODUCT_STATUS_LV } from '../labels.js';
