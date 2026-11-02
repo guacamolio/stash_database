@@ -32,7 +32,7 @@ export default function Users() {
         <tbody>
           {users.map((u) => (
             <tr key={u.id}>
-              <td>{u.id}</td><td>{u.username}{u.id === me.id && ' (jūs)'}</td><td>{ROLE_LV[u.role]}</td><td>{u.created_at}</td> /*paslēpj savu lietotāju lai nevarētu netīšām izdzēst savējo kontu kā admins */
+              <td>{u.id}</td><td>{u.username}{u.id === me.id && ' (jūs)'}</td><td>{ROLE_LV[u.role]}</td><td>{u.created_at}</td> 
               <td className="actions">
                 {can('user:update') && <Link className="btn sm" to={`/users/${u.id}/edit`}>Rediģēt</Link>}
                 {can('user:delete') && u.id !== me.id && <button className="btn sm danger" onClick={() => remove(u)}>Dzēst</button>}
@@ -44,3 +44,4 @@ export default function Users() {
     </>
   );
 }
+/*paslēpj savu lietotāju lai nevarētu netīšām izdzēst savējo kontu kā admins */
